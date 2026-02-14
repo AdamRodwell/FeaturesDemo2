@@ -1837,7 +1837,7 @@ Children:
               Id: g=b60462589e07015b709104fc68f9fe87
               Type: PropertyType
               DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/RecipeSchema"
+              Value: {"Id":2,"Namespace":29}
             - Name: DynamicLink
               Id: g=4090bc044202aa5d55ef6cf078b46d3a
               Type: DynamicLink

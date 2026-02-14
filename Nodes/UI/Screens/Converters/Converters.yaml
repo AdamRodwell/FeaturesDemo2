@@ -6514,7 +6514,7 @@ Children:
               - Name: FillMode
                 Id: g=19ceb71554324b7355e8f4e81c3553be
                 Type: BaseDataVariableType
-                DataType: FillModeEnum
+                DataType: ImageFillModeEnum
                 ModellingRule: Optional
                 Value: 1
               - Name: ImageBottomMargin

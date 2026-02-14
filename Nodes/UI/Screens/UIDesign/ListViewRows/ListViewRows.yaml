@@ -1,0 +1,7 @@
+Name: ListViewRows
+Id: g=f950987b60f64ea4515a179d6467fc63
+Type: FolderType
+Children:
+- File: Model/Model.yaml
+- File: Alarms/Alarms.yaml
+- File: Store/Store.yaml

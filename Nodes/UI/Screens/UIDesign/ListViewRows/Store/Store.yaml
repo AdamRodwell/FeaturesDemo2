@@ -1,0 +1,569 @@
+Name: Store
+Id: g=99e94e8bff86d22d69597ab000eaf805
+Type: FolderType
+Children:
+- Name: StoreListViewRow
+  Id: g=76a0131d2421a4d27087ee932679f161
+  Supertype: ListViewRow
+  ReferenceType: HasComponent
+  Children:
+  - Name: RowItem
+    Id: g=92d21ebbef8b168b526a755fcffd8bf8
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=e0dcb17c95b9f7167d4c31ef09cc6678
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+  - Name: Width
+    Id: g=adab11af3c5be946eaf99ec2315018c7
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 780.0
+  - Name: Height
+    Id: g=1ef588d971bcb00986a591860953122e
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: BottomLine
+    Id: g=5fbaef5ec59beb959f35ea08d9edc161
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Id: g=1920e6f5eb3b94cb5dd678908bde409f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=805a90f631455d06d7c2c1eb8b77a65c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: HorizontalAlignment
+      Id: g=8bf868716d393ce939fffc681b6662ce
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=9959fba79cd36d914f8a93bfbfa4503c
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: FillColor
+      Id: g=8e1082647994040adea55fc63f4ff197
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#000000"
+  - Name: TimestampTitle
+    Id: g=7fcc8bf3a5bae90bfb940f341f6ab9d6
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=b68efad602eaada9bb88ff0a41962966
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"Timestamp"}
+    - Name: LeftMargin
+      Id: g=72528607e0ed2ee9661d07f3206355fc
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: TopMargin
+      Id: g=3cfa5f006563c6c751216dc4046e372b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: FontWeight
+      Id: g=f0d23fdd73520acb62ce7472c5d60941
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+  - Name: TimestampValue
+    Id: g=854fa67baacfe799f4aef96d9770b94c
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=3bcc1fac3d053743add07e37d29a597c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Id: g=e6690cb1df5861a4ae16cb98119c71a7
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{RowItem}/Timestamp"
+    - Name: TopMargin
+      Id: g=b19914616ffa5b88b058a82da4336486
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: LeftMargin
+      Id: g=c4863beeff60d3891111c8e7888b1701
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 128.0
+  - Name: Variable1Title
+    Id: g=a7e7e92bef1d66429771ba928fdcf428
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=d1c372ebfdc776f91261bcdb5b8db631
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"Variable1"}
+    - Name: LeftMargin
+      Id: g=3eb09e48369a55903fb322f3abe8eff1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=e92aa2f783280c43336a4569d1c89921
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+  - Name: Variable1Value
+    Id: g=1ed8069073628be8f61f2d20cac70c57
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=abf2811f3363be96015f1602aae02b58
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Id: g=e3451552b8d754eb855117367ec6e01a
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{RowItem}/dataloggerVariable1"
+    - Name: TopMargin
+      Id: g=7316e0b5be939110799a6cf9049c27c6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: LeftMargin
+      Id: g=ef87d82a18e5a2d49caf0670bf04931c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 138.0
+  - Name: Variable2Title
+    Id: g=02a575b43886d7f446744762226c44a1
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=9ff17a948fff4b96f25cc18eb32e7a51
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"Variable2"}
+    - Name: LeftMargin
+      Id: g=1a004d58e1d85679a28f394cd5b50018
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=254e3e5ebdf9b777e8d0368cae4951bd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 54.0
+  - Name: Variable2Value
+    Id: g=ca808da607e6c7526ad6507a52d4f4e4
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=a2547675e7c68edbc4aec8437cd3cf7c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Id: g=2b2a3ffae7c13adcef4a6c2d5134ce1f
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{RowItem}/dataloggerVariable2"
+    - Name: TopMargin
+      Id: g=a6bbf1dcb1d4fca87356acfb90dbc94c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 54.0
+    - Name: LeftMargin
+      Id: g=1882a5c3b912f6255b40a7b1d1fc3b78
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 138.0
+  - Name: Variable3Title
+    Id: g=1f80bc9947273aeeafa1d4caecec2c90
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=7f6ed9373ab481be98993e5bcc3c8f2d
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"Variable3"}
+    - Name: LeftMargin
+      Id: g=591004a7f9b986d064fa2dcf87af6f5a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=a231e34c6a1ba69388d6ee5d6bb4f112
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 76.0
+  - Name: Variable3Value
+    Id: g=7648a6c17560d4795cbb280b9c5ee0e9
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=43b035afb32d5770d9883fd490fc2a7c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Id: g=a2150412553b88d5ed05aba5e97adfbe
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{RowItem}/dataloggerVariable2"
+    - Name: TopMargin
+      Id: g=6f5a6decd37336bea670df77442b324b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 76.0
+    - Name: LeftMargin
+      Id: g=a09152402aa44d2e60fd3f52d97baede
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 138.0
+  - Name: HorizontalAlignment
+    Id: g=3447315e0a9151a09922e9cee550823c
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: StatisticsTitle
+    Id: g=d0a827d22762f6e4cd2615fe6b7dfe6c
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=e8bc1908aa3e75f5e8417c057c1b54cd
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"Statistics"}
+    - Name: LeftMargin
+      Id: g=b5101e50e2d617b5158d481df914980a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 450.0
+    - Name: TopMargin
+      Id: g=59943586206e9888f413ac7ccdc782dd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: FontSize
+      Id: g=aa00436184a2fd18ee6c6ba8d84f9a41
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -1.0
+    - Name: FontFamily
+      Id: g=bac84791b4136db3b08d065b62d7ba32
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+    - Name: FontWeight
+      Id: g=560c25bc4a18649148b3c31f20f93248
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+  - Name: MinimumValueTitle
+    Id: g=aa80082b86ad92584267656537f9d2e4
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=0a002b71432f07404f88274531977111
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"MinimumValue"}
+    - Name: LeftMargin
+      Id: g=e0a7d4e7b21635a53602501d6803892f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 460.0
+    - Name: TopMargin
+      Id: g=5ca26e6c564986540a32582ba2efd893
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+  - Name: MinimumValue
+    Id: g=66bc814163770490e6a7e3ac493daaed
+    Type: Label
+    Children:
+    - Name: LeftMargin
+      Id: g=50217ce417406dd3115c59e7ee36d32a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Id: g=877714292d26a4ad4dc2a7ef8965c9c5
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: Text
+      Id: g=fc746891d437330dc8293a6644050890
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=5c7809d2754cbf88d1f34110e2da7b05
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=2ad6612d1e33109119c7e3f1c95a6316
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "min({#var1},{#var2},{#var3})"
+        - Name: ns=2;Sourcevar1
+          Id: g=fb4ee6b372cd2f01e9b4c5a56ae0c323
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=0d017515df77bd0e856efcc9466f45e2
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable1"
+        - Name: ns=2;Sourcevar2
+          Id: g=4a64907809542271c52f8c3ffe1ba638
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=a6ef2d8a6164164e1594739b54f61d89
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable2"
+        - Name: ns=2;Sourcevar3
+          Id: g=2418dbb29bcd2f3808c9cee0ac015927
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=f0f3cbb0d095124f304301b9bf36dc5a
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable3"
+  - Name: MaximumValueTitle
+    Id: g=b952c57662de17d76d7b0a707ef2c3fe
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=12dbcb0a02f3f5e4abd26fcd9224f33e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"MaximumValue"}
+    - Name: LeftMargin
+      Id: g=c6a7f5d28745001379cb711c185db5f6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 460.0
+    - Name: TopMargin
+      Id: g=80376dd3661ad3edb4e15366281309e7
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 54.0
+  - Name: MaximumValue
+    Id: g=4c0ec8a5ea96b5fa22faf295f3289c32
+    Type: Label
+    Children:
+    - Name: LeftMargin
+      Id: g=5a23c272fd4ea42a13536cf00aa56cbd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Id: g=d4230bda65b19fd252ba7b2b5b62b9d8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 54.0
+    - Name: Text
+      Id: g=59c26f459c10de3cad101facda66717c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=d6036c79c8fd714524e6b1a271d5c7c0
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=69b979f6bd2f7b4d6832700b3e74b908
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "max({#var1},{#var2},{#var3})"
+        - Name: ns=2;Sourcevar1
+          Id: g=eb8b970681650d896b4d1464ba3ea18d
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=da3548645bee8713a5044a50a3b3e2d5
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable1"
+        - Name: ns=2;Sourcevar2
+          Id: g=c9a9b9d476488e69c75a88b3948aba8f
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=5afe4576be4cd1a6b0a78a988d7e9cd9
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable2"
+        - Name: ns=2;Sourcevar3
+          Id: g=e2996974160beb4b49f7c7e899411e23
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=e9319a3827c798004401c111117a7c5a
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable3"
+  - Name: AverageValueTitle
+    Id: g=9d2ddd8c38feefc5ab5795f18f3cff49
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=bc39580e275d90a94b0a8a92f0c4690e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"AverageValue"}
+    - Name: LeftMargin
+      Id: g=5a503f5725e7e4faa8f5f74753c2e397
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 460.0
+    - Name: TopMargin
+      Id: g=3c5e685fab834e9cc2db68dfed869e70
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 76.0
+  - Name: AverageValue
+    Id: g=e7f70600ae2744c641b4118d8449d3d9
+    Type: Label
+    Children:
+    - Name: LeftMargin
+      Id: g=e29a4997a7cbaa2204b3290b46bedfdb
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Id: g=48036a2e6409cc9defeb90f6393a4530
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 76.0
+    - Name: Text
+      Id: g=4df239f486c943c6fd294a4b55bb6a3c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=32bd958abb5b2b5e0393907a281a0071
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=2afa146948c5a9790d8bf7a3b27df172
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "avg({#var1},{#var2},{#var3})"
+        - Name: ns=2;Sourcevar1
+          Id: g=595cd718b213be628821f7e18032fff8
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=d09475847345a8009b50228a612162fe
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable1"
+        - Name: ns=2;Sourcevar2
+          Id: g=7b466fe34bf6fb6692362217e7541b57
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=238cc8c50e41ed1e205fafbb8efe38ff
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable2"
+        - Name: ns=2;Sourcevar3
+          Id: g=e9f15dc2de20511cbcbce47eec7e5a41
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=e4f6f2761b86954413278fc7b835e9e1
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{RowItem}/dataloggerVariable3"

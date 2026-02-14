@@ -461,3 +461,4 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../System/System/Device/SystemManagerVersion"
+- File: UIDesign/UIDesign.yaml

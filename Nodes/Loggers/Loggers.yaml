@@ -356,7 +356,7 @@ Children:
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: "/Types/EventTypes/BaseEventType/AuditEventType/AuditUpdateMethodEventType/RecipeApplicationEvent"
+        Value: {"Id":73,"Namespace":29}
         Children:
         - Name: Kind
           Id: g=2b4b4c379678c2a5e40235ce3924bc89

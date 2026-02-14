@@ -75,3 +75,8 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 3
+  - Name: CertificateIsExpired
+    Id: g=a2eb2bcae1fb4a4d88dff11a34c840d6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read

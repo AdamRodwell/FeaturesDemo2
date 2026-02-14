@@ -611,7 +611,7 @@ Children:
     - Name: FillMode
       Id: g=9f289dc8ae78c828d4d4b5e5c8176071
       Type: BaseDataVariableType
-      DataType: FillModeEnum
+      DataType: ImageFillModeEnum
       ModellingRule: Optional
       Value: 1
     - Name: RightMargin
@@ -1046,7 +1046,7 @@ Children:
         - Name: FillMode
           Id: g=1a8654207b43df5af950625114e366eb
           Type: BaseDataVariableType
-          DataType: FillModeEnum
+          DataType: ImageFillModeEnum
           ModellingRule: Optional
         - Name: VerticalAlignment
           Id: g=7fccf05342ee6649a4698625c343d4db

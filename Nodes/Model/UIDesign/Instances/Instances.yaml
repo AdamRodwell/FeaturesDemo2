@@ -1,0 +1,96 @@
+Name: Instances
+Id: g=9e63f97814f36ac732ce691b2e376237
+Type: FolderType
+Children:
+- Name: MyMotorType1
+  Id: g=11c8a51960b1791da9b5da892a07a9ca
+  Type: MyMotorType
+  DisplayName: {"NamespaceIndex":8,"TextId":"InputConveyorMotor"}
+  Children:
+  - Name: Speed
+    Id: g=3936060ccee9ed670c910b7f2368378f
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 75
+  - Name: Status
+    Id: g=0628a7c3ca27ff69da13618bdca628a6
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: g=1dcfc134cf444ba164ae8bc658c07d02
+    Direction: Forward
+  - Class: Reference
+    Target: g=db23d52901fe2247858f4ce33d1922ff
+    Direction: Forward
+- Name: MyMotorType2
+  Id: g=0c59ba0c8a8301dd19bf5f8169be4320
+  Type: MyMotorType
+  DisplayName: {"NamespaceIndex":8,"TextId":"OutputConveyorMotor"}
+  Children:
+  - Name: Speed
+    Id: g=8fc7cc50977cee9708714585cf2f46d8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 60
+  - Name: Status
+    Id: g=25220f4f1f3a4b29e429c12922f76126
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: g=1dcfc134cf444ba164ae8bc658c07d02
+    Direction: Forward
+  - Class: Reference
+    Target: g=db23d52901fe2247858f4ce33d1922ff
+    Direction: Forward
+- Name: MyValveType1
+  Id: g=9acf9180babf8181e18b15bfa4f88dcc
+  Type: MyValveType
+  DisplayName: {"NamespaceIndex":8,"TextId":"TankInputValve"}
+  Children:
+  - Name: Status
+    Id: g=7a7c10f764b078f10d64510affbf043c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Class: Reference
+    Target: g=9f6908bf00c8a841f2ed7dc69e081233
+    Direction: Forward
+  - Class: Reference
+    Target: g=dc034e7f93f9cbb0a21c090a7a3f7695
+    Direction: Forward
+- Name: MyMotorType3
+  Id: g=6ce162460ac649de6156408e9733aaf5
+  Type: MyMotorType
+  DisplayName: {"NamespaceIndex":8,"TextId":"AgitatorMotor"}
+  Children:
+  - Name: Speed
+    Id: g=4def1dbcc75b0709eda6263c61485d54
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 35
+  - Name: Status
+    Id: g=beb6ce1b89b6357a5d9d27069e6e77b1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Class: Reference
+    Target: g=1dcfc134cf444ba164ae8bc658c07d02
+    Direction: Forward
+  - Class: Reference
+    Target: g=db23d52901fe2247858f4ce33d1922ff
+    Direction: Forward
+- Name: MyValveType2
+  Id: g=83e97c31a0d6824eb4a9edcdf2ecc7a6
+  Type: MyValveType
+  DisplayName: {"NamespaceIndex":8,"TextId":"TankOutputValve"}
+  Children:
+  - Name: Status
+    Id: g=82c774b14e947fd54a3358c82e07743a
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: g=9f6908bf00c8a841f2ed7dc69e081233
+    Direction: Forward
+  - Class: Reference
+    Target: g=dc034e7f93f9cbb0a21c090a7a3f7695
+    Direction: Forward

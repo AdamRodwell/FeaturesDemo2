@@ -1,0 +1,37 @@
+Name: Types
+Id: g=4d375b1e7485975656da89e27edc9093
+Type: FolderType
+Children:
+- Name: MyMotorType
+  Id: g=5231ed7eacc5239cdc1366fbeb00d2a9
+  Supertype: BaseObjectType
+  DisplayName: {"NamespaceIndex":8,"TextId":"CustomMotor"}
+  Children:
+  - Name: Speed
+    Id: g=ef4b497f5080c1e7da763f0ef732a350
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Status
+    Id: g=3644defb81f87a579b7d39c7626d2588
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Method
+    Name: StartMotor
+    Id: g=1dcfc134cf444ba164ae8bc658c07d02
+  - Class: Method
+    Name: StopMotor
+    Id: g=db23d52901fe2247858f4ce33d1922ff
+- Name: MyValveType
+  Id: g=b276de3012317c0100ea109e3edcc147
+  Supertype: BaseObjectType
+  Children:
+  - Name: Status
+    Id: g=d9389abf0eb2f1d48ce717a7f44bba9e
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Method
+    Name: CloseValve
+    Id: g=9f6908bf00c8a841f2ed7dc69e081233
+  - Class: Method
+    Name: OpenValve
+    Id: g=dc034e7f93f9cbb0a21c090a7a3f7695

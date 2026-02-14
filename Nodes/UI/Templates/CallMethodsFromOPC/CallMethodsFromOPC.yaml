@@ -117,7 +117,7 @@ Children:
     - Name: FillMode
       Id: g=453e20ccffda097124e4bc2b95fac76b
       Type: BaseDataVariableType
-      DataType: FillModeEnum
+      DataType: ImageFillModeEnum
       ModellingRule: Optional
     - Name: VerticalAlignment
       Id: g=bce78d400edb0ef6fedbf0fcb5692ca7

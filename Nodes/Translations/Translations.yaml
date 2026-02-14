@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [688,4],
+    "Dimensions": [703,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -506,7 +506,7 @@ Children:
      "NumericVariableFormats","Numeric variable formats","Formati variabili numerici","数字变量格式",
      "OctalNotation","Octal notation","Notazione ottale","八元表示法",
      "OnVariableChange","On change variable","Sulla variabile di modifica","在更改变量上",
-     "Open","OPEN","APRIRE","打开",
+     "Open","Open","Apri","打开",
      "Options","Options","Opzioni","选项",
      "ScaleLayoutDescription","Panel that automatically scales its children objects when the container aspect ratio changes.","Pannello che ridimensiona automaticamente i propri oggetti per bambini quando l'aspetto del contenitore cambia.","当容器纵横比变化时，该面板会自动缩放其儿童对象。",
      "Percentage","Percentage","Percentuale","百分比",
@@ -700,7 +700,22 @@ Children:
      "MqttOptixToOptix","Optix to Optix MQTT","MQTT da Optix a Optix","Optix 至 Optix MQTT",
      "MqttOptixToOptixDescription","How to sync variables values from an Optix application to a different Optix application","Sincronizzazione di variabili via MQTT tra due applicativi Optix","如何将 Optix 应用程序中的变量值同步到不同的 Optix 应用程序中",
      "MqttPublishedValues","Published values","Valori pubblicati via MQTT","公布值",
-     "MqttSubscribedValues","Subscribed values","Valori ricevuti via MQTT","订阅值"
+     "MqttSubscribedValues","Subscribed values","Valori ricevuti via MQTT","订阅值",
+     "InputConveyorMotor","Input Conveyor Motor","Motore Nastro Ingresso","",
+     "OutputConveyorMotor","Output Conveyor Motor","Motore Nastro Uscita","",
+     "AgitatorMotor","Agitator Motor","Motore Agitatore","",
+     "TankInputValve","Tank Input Valve","Valvola Ingresso Serbatoio","",
+     "TankOutputValve","Tank Output Valve","Valvola Uscita Serbatoio","",
+     "CustomMotor","CustomMotorTypeName","Motore Custom","",
+     "ListView","List View","List View","",
+     "ListViewDescription","The ListView object allows creating custom visualizations of the Model property, allowing more flexibility and better performances than a DataGrid","La ListView permette di creare delle righe custom da usare per visualizzare oggetti di progetto permettendo una migliore visualizzazione dei dati e migliori prestazioni rispetto ad una DataGrid","",
+     "Sorting","Sorting","Ordinamento","",
+     "SourceModelFolder","Source: Model folder","Sorgente: Modello","",
+     "ShowOnlyActiveItems","Show only active items:","Mostra solo allarmi attivi:","",
+     "SourceActiveAlarms","Source: Active Alarms","Sorgente: Allarmi Attivi","",
+     "PleaseActivateAlarms","Please activate some alarms in the \"Alarms\" page to show elements here","Prego attivare degli allarmi per mostrarli in questa lista","",
+     "SourceDatabase","Source: Database","Sorgente: Database","",
+     "Statistics","Statistics","Statistiche",""
     ]
    }
 - Name: ImportAndExportTranslations

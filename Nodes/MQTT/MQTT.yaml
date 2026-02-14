@@ -160,6 +160,72 @@ Children:
         Id: g=f24cbb7b369eb52b9b0369946be23333
         Type: PropertyType
         DataType: NodeId
+    - Name: DataSource
+      Id: g=c9b0c709b8d0531d5a167812a6aaf1c4
+      Type: BaseDataVariableType
+      DataType: DataSourceEnum
+    - Name: DataLogger
+      Id: g=11fd40c5254b76238a35936144933a1e
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Id: g=bea017714e50630500ee1b5d00522dcb
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+      - Name: ItemKind
+        Id: g=bb0648445b85f6d4733a39bdd529dd9f
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/VariableToLog"
+    - Name: SFEnabled
+      Id: g=f8650e936c7560ad304ff4e3faff462b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferMaxSize
+      Id: g=44e83017371f557b8f21a8f3b2c9394b
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1000
+    - Name: SFBufferOverwrite
+      Id: g=9979b69a15168b82ddb81f6d5d3448b6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferUsage
+      Id: g=340a2b5a29b56409f1a6fa71629e3152
+      Type: BaseDataVariableType
+      DataType: UInt32
+      AccessLevel: Read
+    - Name: SFBufferOverflow
+      Id: g=7d01e9cb166c0269f266e45a017520b4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+  - Name: WillMessageEnabled
+    Id: g=2965dc657eff09d8427e3d31a7696e45
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillTopic
+    Id: g=ad878deea1414f05a86fe3899f5d98d3
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillPayload
+    Id: g=bfc56a5ec879e129bade2017fbedcdc6
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillQoS
+    Id: g=95eac6134d2322b4eb2fca921b16150f
+    Type: BaseDataVariableType
+    DataType: QoSLevelEnum
+  - Name: WillRetain
+    Id: g=acd5d3b208a8c3d0a5798d4466f6fb73
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillDelayInterval
+    Id: g=ea89774197ee1401172911d30f98f90e
+    Type: BaseDataVariableType
+    DataType: Duration
 - Name: Optix_MQTTBroker
   Id: g=f9bd2cbaaca0016e00139df7c10bf1f4
   Type: MQTTBroker
@@ -347,6 +413,53 @@ Children:
       Type: PropertyType
       DataType: Duration
       Value: "0:00:00:00.3330000"
+    - Name: DataSource
+      Id: g=9659a75632499d6e93306212c7b5e6d8
+      Type: BaseDataVariableType
+      DataType: DataSourceEnum
+    - Name: DataLogger
+      Id: g=d1e374bc94df599d82f123ee9b327279
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Id: g=4f6f9533e91f351004c1fd62c77338fb
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+      - Name: ItemKind
+        Id: g=88caf1f84e5b1b76157faab0ad096d0c
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/VariableToLog"
+    - Name: PollingPeriod
+      Id: g=2f7d4107540a4c471db30507fdd745be
+      Type: PropertyType
+      DataType: Duration
+      Value: "0:00:00:00.3330000"
+    - Name: SFEnabled
+      Id: g=3c04596c0cbac5f241b5a910b27cbacf
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferMaxSize
+      Id: g=bbf5354bb50d3d56f2617b54593eb0a0
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1000
+    - Name: SFBufferOverwrite
+      Id: g=412d5dc9e0906342c129afec528487ea
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferUsage
+      Id: g=9bb98400645e8626073fad54c685b45a
+      Type: BaseDataVariableType
+      DataType: UInt32
+      AccessLevel: Read
+    - Name: SFBufferOverflow
+      Id: g=d4df71f23b25227964a41ee6b39f6eef
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
   - Name: MQTTSubscriber
     Id: g=4ca908452d4251272461a3e8bd890345
     Type: MQTTSubscriber
@@ -400,3 +513,27 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "MQTTUser"
+  - Name: WillMessageEnabled
+    Id: g=7a07f9871bf34b4018568459f148831c
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillTopic
+    Id: g=387184f26bd0ccf90994d830132dbab3
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillPayload
+    Id: g=cc4419e28fc00a13b42a153736771bcf
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillQoS
+    Id: g=7f4b1c468967b88c1febdc155ec246ed
+    Type: BaseDataVariableType
+    DataType: QoSLevelEnum
+  - Name: WillRetain
+    Id: g=da49be4ca297cd5c1df24d5a8270d049
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillDelayInterval
+    Id: g=786640b02dd829b1535c88bd13139607
+    Type: BaseDataVariableType
+    DataType: Duration

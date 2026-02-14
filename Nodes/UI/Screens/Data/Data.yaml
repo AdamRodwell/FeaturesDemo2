@@ -10097,7 +10097,7 @@ Children:
           Id: g=bae6cf9337f918941a1eae94ee636b0b
           Type: PropertyType
           DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/RecipeSchema"
+          Value: {"Id":2,"Namespace":29}
       - Name: RecipeController
         Id: g=327f069988c523567841fea28db2fc63
         Type: NetLogic
@@ -10204,7 +10204,7 @@ Children:
             Id: g=3dfce877270efcd2af06303aab8da401
             Type: PropertyType
             DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/RecipeSchema"
+            Value: {"Id":2,"Namespace":29}
           - Name: DynamicLink
             Id: g=cd200375c73f01518d7284079b0dcf5d
             Type: DynamicLink
@@ -20357,7 +20357,7 @@ Children:
       - Name: FillMode
         Id: g=2c09be8530fc071c1fcfb92abf0770af
         Type: BaseDataVariableType
-        DataType: FillModeEnum
+        DataType: ImageFillModeEnum
         ModellingRule: Optional
       - Name: RightMargin
         Id: g=e312d57e55361be3512a2e9650f1f25a

@@ -23,25 +23,39 @@ using FTOptix.Core;
 using FTOptix.MQTTClient;
 using System.Linq;
 using FTOptix.MQTTBroker;
+using System.Threading;
 #endregion
 
 public class MqttClientIdGeneratorLogic : BaseNetLogic
 {
     public override void Start()
     {
-        // Insert code to be executed when the user-defined logic is started
-        var mqttClient = Project.Current.Get<MQTTClient>("MQTT/Mosquitto_MQTTClient");
-        if (mqttClient.ClientId == "FTOptix-1")
-        {
-            mqttClient.ClientId = $"OptixUser-{Guid.NewGuid().ToString().Split("-")[0]}";
-            mqttClient.Stop();
-            mqttClient.Start();
-            Log.Info("ClientIdGeneratorLogic", $"ClientId was set to {mqttClient.ClientId}");
-        }
+        var updateTask = new LongRunningTask(UpdateClientIds, LogicObject);
+        updateTask.Start();
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
     }
+
+    private void UpdateClientIds()
+    {
+        ChangeClientId("MQTT/Mosquitto_MQTTClient");
+        ChangeClientId("MQTT/Optix_MQTTClient");
+    }
+
+    private void ChangeClientId(string mqttClientPath)
+    {
+        var mqttClient = Project.Current.Get<MQTTClient>(mqttClientPath);
+        if (mqttClient.ClientId == "FTOptix-1")
+        {
+            mqttClient.ClientId = $"OptixUser-{Guid.NewGuid().ToString().Split("-")[0]}";
+            mqttClient.Stop();
+            Thread.Sleep(1000);
+            mqttClient.Start();
+            Log.Info("ClientIdGeneratorLogic", $"ClientId was set to {mqttClient.ClientId}");
+        }
+    }
+
 }

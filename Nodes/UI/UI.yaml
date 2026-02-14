@@ -153,6 +153,19 @@ Children:
       - Class: Reference
         Target: ns=1;i=303
         Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=324
+        Direction: Forward
+      - Name: BearerAccessToken
+        Id: g=e0c96a675670066bdd375bdaa8177912
+        Type: BaseVariableType
+        DataType: String
+        AccessLevel: Read
+      - Name: ScaleFactor
+        Id: g=b1842b13cacc03cb418b13c66e553d92
+        Type: BaseDataVariableType
+        DataType: Double
+        Value: 1.0
   - Name: MaxNumberOfConnections
     Id: g=d96adbb96369e4c4c91b4fe130ad59c5
     Type: BaseDataVariableType
@@ -191,6 +204,13 @@ Children:
     Id: g=f29c410a52fd0e73003a5e068ff8340d
     Type: BaseDataVariableType
     DataType: VirtualKeyboardEngineTypeEnum
+  - Name: AllowedLocalSources
+    Id: g=05de605a6b401be06b4e61ce9276f9ed
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["*"]
 - Name: NativePresentationEngine
   Id: g=f97bf56f837beb7fa47c15159e5db05a
   Type: NativePresentationEngine
@@ -344,6 +364,19 @@ Children:
       - Class: Reference
         Target: ns=1;i=303
         Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=324
+        Direction: Forward
+      - Name: BearerAccessToken
+        Id: g=be69bd552f40b20517cc303eabb52a73
+        Type: BaseVariableType
+        DataType: String
+        AccessLevel: Read
+      - Name: ScaleFactor
+        Id: g=7f449e8f7a8674f99a137a3be33aaccc
+        Type: BaseDataVariableType
+        DataType: Double
+        Value: 1.0
   - Name: Session
     Id: g=bb871c92ea4c51ff48f1290354e5f409
     Type: NodePointer
@@ -456,6 +489,19 @@ Children:
   - Class: Reference
     Target: ns=1;i=303
     Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=324
+    Direction: Forward
+  - Name: BearerAccessToken
+    Id: g=2a1e73dd53f0c66c07088de119c15e0a
+    Type: BaseVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: ScaleFactor
+    Id: g=d6855861c9ec0fe0ed97313aa24d33e8
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -574,7 +620,7 @@ Children:
       - Name: FillMode
         Id: g=e614a0f8bbc6d541356c7d6381bca951
         Type: BaseDataVariableType
-        DataType: FillModeEnum
+        DataType: ImageFillModeEnum
         ModellingRule: Optional
         Value: 1
       - Class: Reference
@@ -11063,7 +11109,7 @@ Children:
       - Name: FillMode
         Id: g=91ed018ca25fc578f35782c12e4340c9
         Type: BaseDataVariableType
-        DataType: FillModeEnum
+        DataType: ImageFillModeEnum
         ModellingRule: Optional
         Value: 1
       - Class: Reference

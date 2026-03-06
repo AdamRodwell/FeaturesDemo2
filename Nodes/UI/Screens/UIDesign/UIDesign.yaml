@@ -2237,7 +2237,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 ModellingRule: Optional
-                Value: {"NamespaceIndex":8,"TextId":"UIBaseControls"}
+                Value: {"LocaleId":"en-US","Text":"Test UI Change git"}
               - Name: HorizontalAlignment
                 Id: g=09fb56698b6addcb7a341e7812a7644d
                 Type: BaseVariableType
@@ -2278,6 +2278,22 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 22.0
+              - Name: LeftMargin
+                Id: g=515fecf6da183fba15f347879dc9cf9e
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 2.0
+              - Name: RightMargin
+                Id: g=99552ff66d4e69c0358c4f0a5574af94
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Id: g=7e1dc8031cb2d3ea4728f28e69d6926b
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
             - Name: Subtitle
               Id: g=379d13e790f353bedb7d6e1c3f658aeb
               Type: Label
@@ -2370,7 +2386,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 4.0
+                Value: 5.0
               - Name: BottomMargin
                 Id: g=52706671add72d0300c94647fde1e377
                 Type: BaseVariableType
@@ -2417,6 +2433,17 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 12.0
+              - Name: LeftMargin
+                Id: g=6daeb40dbf8a2302f7574990456da929
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 14.0
+              - Name: RightMargin
+                Id: g=f503b7845ac24c377ffbb7ec126959d5
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
             - Name: Label1
               Id: g=32bf82cc64b86679c92dc2c9c4cd36db
               Type: Label
